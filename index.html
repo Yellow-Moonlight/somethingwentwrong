@@ -75,19 +75,19 @@
       var hours1 = Math.floor((distance1 % _day1) / _hour1);
       var minutes1 = Math.floor((distance1 % _hour1) / _minute1);
       var seconds1 = Math.floor((distance1 % _minute1) / _second1);
-      var total1 = seconds1 + minutes1*60 + hours1*3600 + days1*360*24;
+      var total1 = seconds1 + minutes1*60 + hours1*3600 + days1*3600*24;
 
       var days2 = Math.floor(distance2 / _day2);
       var hours2 = Math.floor((distance2 % _day2) / _hour2);
       var minutes2 = Math.floor((distance2 % _hour2) / _minute2);
       var seconds2 = Math.floor((distance2 % _minute2) / _second2);
-      var total2 = seconds2 + minutes2*60 + hours2*3600 + days2*360*24;
+      var total2 = seconds2 + minutes2*60 + hours2*3600 + days2*3600*24;
 
       var days3 = Math.floor(distance3 / _day1);
       var hours3 = Math.floor((distance3 % _day1) / _hour1);
       var minutes3 = Math.floor((distance3 % _hour1) / _minute1);
       var seconds3 = Math.floor((distance3 % _minute1) / _second1);
-      var total3 = seconds3 + minutes3*60 + hours3*3600 + days3*360*24;
+      var total3 = seconds3 + minutes3*60 + hours3*3600 + days3*3600*24;
 
       var per2 = Math.floor(total3 / (total2+total3) *100);
       var per1 = (total3 / (total2+total3) *100).toFixed(5);
